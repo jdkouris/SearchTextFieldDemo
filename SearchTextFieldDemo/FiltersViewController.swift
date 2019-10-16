@@ -7,17 +7,37 @@
 //
 
 import UIKit
+import SwiftMessages
 
 class FiltersViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let messageView = BaseView(frame: .zero)
+        messageView.backgroundHeight = 300
+        SwiftMessages.show(view: messageView)
     }
     
     @IBAction func saveTapped(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        demoAnyView()
+    }
+    
+    func demoAnyView() -> Void {
+        let messageView = BaseView(frame: .zero)
+        messageView.layoutMargins = .zero
+        messageView.backgroundHeight = 120.0
+        do {
+            let backgroundView = CornerRoundingView()
+            backgroundView.cornerRadius = 15
+            backgroundView.layer.masksToBounds = true
+            messageView.installBackgroundView(backgroundView)
+            messageView.layoutMarginAdditions = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        }
+        messageView.configureDropShadow()
+        var config = SwiftMessages.defaultConfig
+        config.presentationContext = .window(windowLevel: UIWindow.Level.statusBar)
+        SwiftMessages.show(config: config, view: messageView)
     }
     
     /*

@@ -24,7 +24,36 @@ class ViewController: UIViewController {
         searchTextField.highlightAttributes = [NSAttributedString.Key.backgroundColor: UIColor.orange, NSAttributedString.Key.font:UIFont.boldSystemFont(ofSize: 12)]
         
     }
-
+    
+    @IBAction func testButtonTapped(_ sender: Any) {
+        demoAnyView()
+    }
+    
+    func demoAnyView() -> Void {
+        let messageView = BaseView(frame: .zero)
+        messageView.layoutMargins = .zero
+        messageView.backgroundHeight = 400.0
+//        let saveButton = UIButton(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+//        saveButton.translatesAutoresizingMaskIntoConstraints = false
+//        saveButton.topAnchor.constraint(equalTo: messageView.topAnchor).isActive = true
+//        saveButton.leadingAnchor.constraint(equalTo: messageView.leadingAnchor).isActive = true
+//        saveButton.trailingAnchor.constraint(equalTo: messageView.trailingAnchor).isActive = true
+//        saveButton.heightAnchor.constraint(equalToConstant: 30).isActive = true
+//        messageView.addSubview(saveButton)
+        
+        do {
+            let backgroundView = CornerRoundingView()
+            backgroundView.cornerRadius = 15
+            backgroundView.layer.masksToBounds = true
+            messageView.installBackgroundView(backgroundView)
+            messageView.layoutMarginAdditions = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        }
+        messageView.configureDropShadow()
+        var config = SwiftMessages.defaultConfig
+        config.duration = .forever
+        config.presentationContext = .window(windowLevel: UIWindow.Level.statusBar)
+        SwiftMessages.show(config: config, view: messageView)
+    }
 
 }
 

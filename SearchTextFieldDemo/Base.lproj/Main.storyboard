@@ -29,6 +29,14 @@
                                     <segue destination="JKW-Qf-6wA" kind="custom" customClass="SwiftMessagesTopCardSegue" customModule="SearchTextFieldDemo" customModuleProvider="target" id="2vs-wr-g7m"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPP-X0-I8y">
+                                <rect key="frame" x="192" y="236" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <action selector="testButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tY9-th-4NS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
