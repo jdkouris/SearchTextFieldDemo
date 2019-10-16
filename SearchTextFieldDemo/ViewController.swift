@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import SearchTextField
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var searchTextField: SearchTextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        setupSearchTextField()
+    }
+    
+    func setupSearchTextField() {
+        searchTextField.filterStrings(["Red", "Blue", "Orange"])
+        searchTextField.highlightAttributes = [NSAttributedString.Key.backgroundColor: UIColor.orange, NSAttributedString.Key.font:UIFont.boldSystemFont(ofSize: 12)]
+        
     }
 
 

@@ -7,5 +7,6 @@ target 'SearchTextFieldDemo' do
 
   # Pods for SearchTextFieldDemo
   pod 'SearchTextField'
+  pod 'SwiftMessages'
 
 end

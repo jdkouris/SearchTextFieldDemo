@@ -1,16 +1,22 @@
 PODS:
   - SearchTextField (1.2.4)
+  - SwiftMessages (7.0.1):
+    - SwiftMessages/App (= 7.0.1)
+  - SwiftMessages/App (7.0.1)
 
 DEPENDENCIES:
   - SearchTextField
+  - SwiftMessages
 
 SPEC REPOS:
   trunk:
     - SearchTextField
+    - SwiftMessages
 
 SPEC CHECKSUMS:
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
+  SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
 
-PODFILE CHECKSUM: 38e4edd3f8f20bcb4805dde124a4c56223f2cd8a
+PODFILE CHECKSUM: db6678f1429e83a300ddb4441e89f4f9dc5590e1
 
 COCOAPODS: 1.8.3
