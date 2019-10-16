@@ -20,7 +20,7 @@ class FiltersViewController: UIViewController {
     }
     
     @IBAction func saveTapped(_ sender: Any) {
-        demoAnyView()
+        dismiss(animated: true, completion: nil)
     }
     
     func demoAnyView() -> Void {
