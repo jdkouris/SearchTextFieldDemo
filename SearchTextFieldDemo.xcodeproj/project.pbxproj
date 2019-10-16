@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EB3E4E5F21EFD9919268916 /* Pods_SearchTextFieldDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8089177700026177950A91CE /* Pods_SearchTextFieldDemo.framework */; };
 		CCC7C3E023578041000994B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC7C3DF23578041000994B3 /* AppDelegate.swift */; };
 		CCC7C3E223578041000994B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC7C3E123578041000994B3 /* SceneDelegate.swift */; };
 		CCC7C3E423578041000994B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC7C3E323578041000994B3 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E79703F1086B40E651E37FD /* Pods-SearchTextFieldDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchTextFieldDemo.release.xcconfig"; path = "Target Support Files/Pods-SearchTextFieldDemo/Pods-SearchTextFieldDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5E52A49E097F4A902FE94C08 /* Pods-SearchTextFieldDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchTextFieldDemo.debug.xcconfig"; path = "Target Support Files/Pods-SearchTextFieldDemo/Pods-SearchTextFieldDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8089177700026177950A91CE /* Pods_SearchTextFieldDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchTextFieldDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC7C3DC23578041000994B3 /* SearchTextFieldDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchTextFieldDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCC7C3DF23578041000994B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCC7C3E123578041000994B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EB3E4E5F21EFD9919268916 /* Pods_SearchTextFieldDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		126DDC0A445044B6F1B19120 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8089177700026177950A91CE /* Pods_SearchTextFieldDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5650421E1DFABD73226C4BA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E52A49E097F4A902FE94C08 /* Pods-SearchTextFieldDemo.debug.xcconfig */,
+				0E79703F1086B40E651E37FD /* Pods-SearchTextFieldDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CCC7C3D323578041000994B3 = {
 			isa = PBXGroup;
 			children = (
 				CCC7C3DE23578041000994B3 /* SearchTextFieldDemo */,
 				CCC7C3DD23578041000994B3 /* Products */,
+				5650421E1DFABD73226C4BA9 /* Pods */,
+				126DDC0A445044B6F1B19120 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CCC7C3F023578044000994B3 /* Build configuration list for PBXNativeTarget "SearchTextFieldDemo" */;
 			buildPhases = (
+				FCCD2A72CC1F5EAC1CEBE20C /* [CP] Check Pods Manifest.lock */,
 				CCC7C3D823578041000994B3 /* Sources */,
 				CCC7C3D923578041000994B3 /* Frameworks */,
 				CCC7C3DA23578041000994B3 /* Resources */,
+				48AD8DB4DAD9BDACC4D01506 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		48AD8DB4DAD9BDACC4D01506 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchTextFieldDemo/Pods-SearchTextFieldDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SearchTextFieldDemo/Pods-SearchTextFieldDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SearchTextFieldDemo/Pods-SearchTextFieldDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCCD2A72CC1F5EAC1CEBE20C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SearchTextFieldDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CCC7C3D823578041000994B3 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		CCC7C3F123578044000994B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E52A49E097F4A902FE94C08 /* Pods-SearchTextFieldDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		CCC7C3F223578044000994B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E79703F1086B40E651E37FD /* Pods-SearchTextFieldDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
